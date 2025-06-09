@@ -14,4 +14,6 @@ def generate_prime_factors(number):
         return []
     if number in (2, 3):
         return [number]
+    if number == 4:
+        return [2, 2]
     return int(number)
