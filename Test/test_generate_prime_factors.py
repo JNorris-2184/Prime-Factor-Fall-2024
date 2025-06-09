@@ -15,3 +15,8 @@ def test_invalid_datatype():
 def test_one_returns_empty_list():
     """Assert prime factors of 1 is an empty list"""
     assert prime.generate_prime_factors(1) == []
+
+
+def test_two_returns_list_with_two():
+    """Assert prime factors of 2 is list containing 2"""
+    assert prime.generate_prime_factors(2) == [2]
