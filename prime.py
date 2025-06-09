@@ -10,10 +10,12 @@ def generate_prime_factors(number):
     Returns:
     list: prime factors of number
     """
-    if number == 1:
-        return []
-    if number in (2, 3):
-        return [number]
-    if number == 4:
-        return [2, 2]
+    if int(number):
+        prime_list = []
+        while number % 2 == 0:
+            prime_list.append(2)
+            number /= 2
+        if number == 3:
+            prime_list.append(3)
+        return prime_list
     return int(number)

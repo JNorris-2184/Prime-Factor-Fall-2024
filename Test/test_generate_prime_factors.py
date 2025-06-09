@@ -35,3 +35,8 @@ def test_three_returns_list_with_three():
 def test_four_returns_list_with_two_two():
     """Assert prime factors of 4 is list containing 2,2"""
     assert prime.generate_prime_factors(4) == [2, 2]
+
+
+def test_six_returns_list_with_two_three():
+    """Assert prime factors of 6 is list containing 2,3"""
+    assert prime.generate_prime_factors(6) == [2, 3]
