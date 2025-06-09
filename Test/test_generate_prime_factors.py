@@ -20,3 +20,8 @@ def test_one_returns_empty_list():
 def test_two_returns_list_with_two():
     """Assert prime factors of 2 is list containing 2"""
     assert prime.generate_prime_factors(2) == [2]
+
+
+def test_three_returns_list_with_three():
+    """Assert prime factors of 3 is list containing 3"""
+    assert prime.generate_prime_factors(3) == [3]

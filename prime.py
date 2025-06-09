@@ -12,6 +12,6 @@ def generate_prime_factors(number):
     """
     if number == 1:
         return []
-    if number == 2:
+    if number in (2, 3):
         return [number]
     return int(number)
