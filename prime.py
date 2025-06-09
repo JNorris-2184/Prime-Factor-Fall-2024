@@ -10,4 +10,6 @@ def generate_prime_factors(number):
     Returns:
     list: prime factors of number
     """
+    if number == 1:
+        return []
     return int(number)
