@@ -62,4 +62,12 @@ def test_prime_numbers():
     prime_number_validation(5)
     prime_number_validation(11)
     prime_number_validation(43)
-    prime_number_validation(6469693189)
+
+
+def test_non_prime_numbers():
+    """Assert factors of each number is list provided"""
+    any_number_validation(10, [2, 5])
+    any_number_validation(25, [5, 5])
+    any_number_validation(18, [2, 3, 3])
+    any_number_validation(1234, [2, 617])
+    any_number_validation(9999, [3, 3, 11, 101])

@@ -12,13 +12,14 @@ def generate_prime_factors(number):
     """
     if int(number):
         prime_list = []
-        while number % 2 == 0:
-            prime_list.append(2)
-            number /= 2
-        if number % 3 == 0:
-            prime_list.append(3)
-        if number == 9:
-            prime_list.append(3)
+        i = 2
+        factored_number = number
+        while i <= number - 1:
+            if factored_number % i == 0:
+                while factored_number % i == 0:
+                    prime_list.append(i)
+                    factored_number /= i
+            i += 1
         if len(prime_list) == 0:
             if number != 1:
                 prime_list = [number]
