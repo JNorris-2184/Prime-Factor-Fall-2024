@@ -40,3 +40,8 @@ def test_four_returns_list_with_two_two():
 def test_six_returns_list_with_two_three():
     """Assert prime factors of 6 is list containing 2,3"""
     assert prime.generate_prime_factors(6) == [2, 3]
+
+
+def test_eight_returns_list_with_two_two_two():
+    """Assert prime factors of 8 is list containing 2,2,2"""
+    assert prime.generate_prime_factors(8) == [2, 2, 2]
