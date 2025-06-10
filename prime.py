@@ -19,5 +19,8 @@ def generate_prime_factors(number):
             prime_list.append(3)
         if number == 9:
             prime_list.append(3)
+        if len(prime_list) == 0:
+            if number != 1:
+                prime_list = [number]
         return prime_list
     return int(number)

@@ -55,3 +55,11 @@ def test_eight_returns_list_with_two_two_two():
 def test_nine_returns_list_with_three_three():
     """Assert prime factors of 9 is list containing 3,3"""
     any_number_validation(9, [3, 3])
+
+
+def test_prime_numbers():
+    """Assert prime factors of a prime is list containing itself"""
+    prime_number_validation(5)
+    prime_number_validation(11)
+    prime_number_validation(43)
+    prime_number_validation(6469693189)
