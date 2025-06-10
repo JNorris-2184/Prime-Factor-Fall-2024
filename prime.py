@@ -15,7 +15,9 @@ def generate_prime_factors(number):
         while number % 2 == 0:
             prime_list.append(2)
             number /= 2
-        if number == 3:
+        if number % 3 == 0:
+            prime_list.append(3)
+        if number == 9:
             prime_list.append(3)
         return prime_list
     return int(number)
